@@ -36,21 +36,30 @@ body {
 	height: 600px;
 }
 
-.carousel-inner img{
+.carousel-item {
 	width: 100%;
 	height: 100%;
+}
 
-	transform: translateY(-30%);
+.carousel-item:nth-child(1) {
+	background: url(../img/people-in-concert-1763075.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+	background: url(../img/people-at-concert-1105666.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+	background: url(../img/silhouette-of-people-in-front-of-stage.jpg) no-repeat center;
+	background-size: cover;
 }
 
 /* Info */
-.row {
+#info {
 	font-family: 'Neucha', cursive;
-	margin: 40px 0;
-}
-
-.info {
-	margin-top: 30px;
+	margin: 50px auto;
 }
 
 .info__bg {
@@ -71,10 +80,10 @@ body {
 
 	display: flex;
 	position: absolute;
-    top: 24%;
-    left: 50%;
-    z-index: 2;
-    transform: translate3d(-50%, -24%, 0);
+	top: 24%;
+	left: 50%;
+	z-index: 2;
+	transform: translate3d(-50%, -24%, 0);
 }
 
 .info__suptitle {
@@ -85,32 +94,112 @@ body {
 
 /* Groups */
 .groups {
-	padding: 0 !important;
+	margin: 50px 0;
 }
-
-.groups__bg img {
-	display: flex;
+.groups__card {
 	position: relative;
-
 	width: 100%;
 	height: 280px;
 }
 
+.groups__img-1 {
+	height: 280px;
+	background: url("../img/groups/The Nexstone.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__img-2 {
+	height: 280px;
+	background: url("../img/groups/epolets.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__img-3 {
+	height: 280px;
+	background: url("../img/groups/Atmasfera.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__img-4 {
+	height: 280px;
+	background: url("../img/groups/motanka.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__img-5 {
+	height: 280px;
+	background: url("../img/groups/Фіолет.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__img-6 {
+	height: 280px;
+	background: url("../img/groups/DETACH.jpg") no-repeat center;
+	background-size: cover;
+}
+
+/* groups__collapse */
+.groups__collapse {
+	margin: 50px 0;
+}
+
+.groups__collapse .groups__img-1 {
+	height: 280px;
+	background: url("../img/groups/Beast Riders.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__collapse .groups__img-2 {
+	height: 280px;
+	background: url("../img/groups/StereoЛом.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__collapse .groups__img-3 {
+	height: 280px;
+	background: url("../img/groups/Morphine Suffering.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__collapse .groups__img-4 {
+	height: 280px;
+	background: url("../img/groups/Ot Vintа.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__collapse .groups__img-5 {
+	height: 280px;
+	background: url("../img/groups/Тінь Сонця.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.groups__collapse .groups__img-6 {
+	height: 280px;
+	background: url("../img/groups/hardkiss.jpg") no-repeat center;
+	background-size: cover;
+}
+
 .groups__name {
-	display: flex;
 	position: absolute;
-	left: 35%;
-	bottom: 12%;
+	left: 0;
+	right: 0;
+	bottom: 7%;
 	z-index: 2;
 
+	text-align: center;
 	background-color: #fff;
 	font-size: 25px;
 	opacity: 0.7;
-	justify-content: center;
 }
 
-figure #fixed {
-	height: 400px;
+/* fixed image */
+.fixed-wrap {
+	margin: 50px 0;
+}
+
+#fixed-img {
+	height: 450px;
+	width: 100%;
 	border-top: 4px solid #f0f0f0;
 	border-bottom: 4px solid #f0f0f0;
 	background: url("../img/black-and-white-festival.jpg") no-repeat center fixed;
@@ -118,3 +207,22 @@ figure #fixed {
 	background-color: tomato;
 	background-size: cover;
 }	
+
+
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+
+	/*Carousel */
+	.carousel-inner {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	/*Carousel */
+	.carousel-inner {
+		height: 400px;
+	}
+}
