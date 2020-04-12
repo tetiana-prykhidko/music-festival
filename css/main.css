@@ -208,7 +208,26 @@ body {
 	background-size: cover;
 }	
 
+/* Media */
+.card {
+	margin: 25px 0;
+}
 
+.card:hover {
+	text-decoration: none;
+	box-shadow: 0 0 30px 10px rgba(66,65,66,0.6);
+	transition: 0.3s linear;
+}
+
+.card-title {
+	font-size: 25px;
+	color: #222;
+	font-family: 'Neucha', cursive;
+}
+
+.media a {
+	color: inherit;
+}
 
 /* Media Queries*/
 @media screen and (max-width: 768px) {
