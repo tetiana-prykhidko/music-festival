@@ -5,6 +5,9 @@ body {
 	color: #222;
 }
 
+section {
+	margin: 50px 0;
+}
 
 /* Navbar */
 .navbar-collapse ul {
@@ -242,9 +245,146 @@ body {
 	font-family: 'Neucha', cursive;
 }
 
+.media {
+	margin: 50px 0;
+}
+
 .media a {
 	color: inherit;
 }
+
+/* Swiper */
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/* Team */
+.img__box {
+	position: relative;
+	margin: 20px auto;
+	border-radius: 15px;
+	overflow: hidden;
+	max-width: 510px;
+	height: 430px;
+}
+
+.team .col-md-6:nth-child(1) .img__box {
+	background: url(../img/team/woman-wearing-orange-sweater-2343858.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.team .col-md-6:nth-child(2) .img__box {
+	background: url(../img/team/back-view-of-woman-holding-her-denim-jacket-789812.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.team .col-md-6:nth-child(3) .img__box {
+	background: url(../img/team/men-s-white-dress-shirt-2325755.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.team .col-md-6:nth-child(4) .img__box {
+	background: url(../img/team/woman-wearing-red-dress-holding-turned-on-string-lights-1854129.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.team__text {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: -65px;
+	transform: translateY(-50%);
+
+	text-align: center;
+	color: #111;
+	width: 100%;
+	font-weight: 700;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+
+.img__box:hover .team__text {
+	top: 10%;
+	transform: translateY(-30%);
+
+	color: #fff;
+}
+
+.img__box ul {
+	display: flex;
+	position: absolute;
+	bottom: -10px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+	transform: translateY(40px);
+	transition: 0.5s;
+}
+
+.img__box:hover ul {
+	transform: translateY(-30px);
+}
+
+.img__box ul li {
+	list-style: none;
+	width: 20%;
+	box-sizing: border-box;
+}
+
+.img__box ul li a {
+	margin: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.img__box ul li:hover:nth-child(1) {
+	background: #3b5999;
+}
+
+.img__box ul li:hover:nth-child(2) {
+	background: #e4405f;
+}
+
+.img__box ul li:hover:nth-child(3) {
+	background: #0077B5;
+}
+
+.img__box ul li:hover:nth-child(4) {
+	background: #dd4b39;
+}
+.img__box ul li:hover:nth-child(5) {
+	background: #55acee;
+}
+
+
+
+
+
+
+
 
 /* Media Queries*/
 @media screen and (max-width: 768px) {
