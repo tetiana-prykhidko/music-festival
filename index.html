@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="icon" type="img/png" href="img/icon.png">
-	<link rel="stylesheet" type="text/javascript" href="https://unpkg.com/swiper/css/swiper.min.cs">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.min.css"> -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>WoodStock</title>
 </head>
@@ -19,7 +22,7 @@
 			<a href="#" class="navbar-brand">
 				<img src="img/logo.png" alt="logo">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
@@ -28,7 +31,7 @@
 						<a href="#" class="nav-link">Головна</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a href="#info" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Інфо</a>
+						<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Інфо</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Історія</a>
 							<a class="dropdown-item" href="#">Питання-Відповідь</a>
@@ -38,7 +41,7 @@
 					</li>
 
 					<li class="nav-item dropdown">
-						<a href="#groups" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Учасники
+						<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Учасники
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Main Stage</a>
@@ -73,10 +76,10 @@
 					<li class="nav-item">
 						<a href="#" class="nav-link">Патруль миру</a>
 					</li>
-					<button class="btn btn-danger" type="button">Реєстрація</button>
+					<li><button class="btn btn-danger">Реєстрація</button></li>
 				</ul>
 			</div>
-		</div>
+		</div> <!-- /container-fluid -->
 	</nav>
 
 	<!--Intro slider -->
@@ -112,409 +115,367 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</div> <!-- /Intro slider -->
 
-<!-- Info -->
-<section id="info">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
+	<!-- Info -->
+	<section id="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">3</div>
+						<div class="info__suptitle">Сцени</div>
+					</div>
 				</div>
-				<div class="info__content">
-					<div class="info__number">3</div>
-					<div class="info__suptitle">Сцени</div>
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">40</div>
+						<div class="info__suptitle">Виконавців</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">38</div>
+						<div class="info__suptitle">Годин музики</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">500</div>
+						<div class="info__suptitle">КвТ звуку</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">10</div>
+						<div class="info__suptitle">Гектарів території</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 justify-content-center">
+					<div class="info__bg">
+						<img src="img/hiclipart.com.png">
+					</div>
+					<div class="info__content">
+						<div class="info__number">8000</div>
+						<div class="info__suptitle">Відвідувачів</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
+		</div> 
+	</section> <!-- /Info -->
+
+	<!-- Groups -->
+	<section id="groups" class="groups">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-1"></div>
+						<div class="groups__name">The Nexstone</div>
+					</div>
 				</div>
-				<div class="info__content">
-					<div class="info__number">40</div>
-					<div class="info__suptitle">Виконавців</div>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-2"></div>
+						<div class="groups__name">Epolets</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-3"></div>
+						<div class="groups__name">Atmasfera</div>
+					</div>
 				</div>
-				<div class="info__content">
-					<div class="info__number">38</div>
-					<div class="info__suptitle">Годин музики</div>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-4"></div>
+						<div class="groups__name">Motanka</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-5"></div>
+						<div class="groups__name">Фіолет</div>
+					</div>
 				</div>
-				<div class="info__content">
-					<div class="info__number">500</div>
-					<div class="info__suptitle">КвТ звуку</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
-				</div>
-				<div class="info__content">
-					<div class="info__number">10</div>
-					<div class="info__suptitle">Гектарів території</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 justify-content-center">
-				<div class="info__bg">
-					<img src="img/hiclipart.com.png">
-				</div>
-				<div class="info__content">
-					<div class="info__number">8000</div>
-					<div class="info__suptitle">Відвідувачів</div>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-6"></div>
+						<div class="groups__name">DETACH</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div> 
-</section> <!-- /Info -->
+	</section> <!--/groups-->
 
-<!-- Groups -->
-<section id="groups" class="groups">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-1"></div>
-					<div class="groups__name">The Nexstone</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-2"></div>
-					<div class="groups__name">Epolets</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-3"></div>
-					<div class="groups__name">Atmasfera</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-4"></div>
-					<div class="groups__name">Motanka</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-5"></div>
-					<div class="groups__name">Фіолет</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-6"></div>
-					<div class="groups__name">DETACH</div>
-				</div>
-			</div>
-		</div>
+	<!--collapse section-->
+	<div class="text-center">
+
+		<button class="btn btn-lg btn-danger text-center" data-toggle="collapse" data-target="#groups__all">Подитивися всіх виконавців</button>
 	</div>
-</section>
 
-<!--collapse section-->
-<div class="text-center">
-
-	<button type="button" class="btn btn-lg btn-danger text-center" data-toggle="collapse" data-target="#groups__all">Подитивися всіх виконавців</button>
-</div>
-
-<div id="groups__all" class="collapse groups__collapse">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-1"></div>
-					<div class="groups__name">Beast Riders</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-2"></div>
-					<div class="groups__name">StereoЛом</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-3"></div>
-					<div class="groups__name">Morphine Suffering</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-4"></div>
-					<div class="groups__name">Ot Vinta</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-5"></div>
-					<div class="groups__name">Тінь Сонця</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4 px-0">
-				<div class="groups__card">
-					<div class="groups__img-6"></div>
-					<div class="groups__name">Hardkiss</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- fixed img-->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed-img"></div>
-	</div>
-</figure>
-
-<!-- Media -->
-<section id="media" class="media">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo16.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2019</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	<div id="groups__all" class="collapse groups__collapse">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-1"></div>
+						<div class="groups__name">Beast Riders</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo6.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2018</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div>				
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo9.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2017</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-2"></div>
+						<div class="groups__name">StereoЛом</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo2.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2016</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-3"></div>
+						<div class="groups__name">Morphine Suffering</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo18.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2015</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-4"></div>
+						<div class="groups__name">Ot Vinta</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<a href="https://woodstock.in.ua/foto/" target="_blank">
-					<div class="card">
-						<img src="img/media/photo15.jpg" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">WoodStock 2014</h5>
-						</a>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-5"></div>
+						<div class="groups__name">Тінь Сонця</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 px-0">
+					<div class="groups__card">
+						<div class="groups__img-6"></div>
+						<div class="groups__name">Hardkiss</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
 
-<!-- Swiper -->
-<div class="swiper-container">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/ukr-crisis.jpg">
+	<!-- fixed img-->
+	<figure>
+		<div class="fixed-wrap">
+			<div id="fixed-img"></div>
+		</div>
+	</figure>
+
+	<!-- Media -->
+	<section id="media" class="media">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo16.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2019</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo6.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2018</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>	
+					</a>			
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo9.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2017</h5>	
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo2.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2016</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo18.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2015</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="https://woodstock.in.ua/foto/" target="_blank">
+						<div class="card">
+							<img src="img/media/photo15.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">WoodStock 2014</h5>			
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</section>
+
+	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/ukr-crisis.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/вголос.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/m1.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/perfect.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/plastics.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/профіль-пласт.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/stage-boosters.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper__img">
+					<img src="img/sponsors/gazeta-ua.jpg">
+				</div>
 			</div>
 		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/вголос.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/m1.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/perfect.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/plastics.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/профіль-пласт.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/stage-boosters.jpg">
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="swiper__img">
-				<img src="img/sponsors/gazeta-ua.jpg">
-			</div>
-		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
 	</div>
-	Add Pagination
-	<div class="swiper-pagination"></div>
-	Add Arrows
-	<div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div>
-</div>
 
-
+	<!-- Team -->
+	<section class="team">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="img__box">
+						<div class="team__text">
+							<h2>Яна Сидор</h2>
+							<h4>Генеральний директор</h4>
+						</div>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="img__box">
+						<div class="team__text">
+							<h2>Катерина Галанзовська</h2>
+							<h4>Виконавчий директор</h4>
+						</div>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="img__box">
+						<div class="team__text">
+							<h2>Георгій Потапчук</h2>
+							<h4>Арт-директор</h4>
+						</div>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="img__box">
+						<div class="team__text">
+							<h2>PR-директор</h2>
+							<h4>Катерина Сторожук</h4>
+						</div>
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- 	<script scr="js/swiper.min.js"></script> -->
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script>
-	var swiper = new Swiper('.swiper-container', {
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'progressbar',
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	});
-</script>
-
-<!-- Team -->
-<section class="team">
-	<div class="container-fluid">
-		
-		<div class="row">
-			<div class="col-md-6 col-lg-3">
-				<div class="img__box">
-					<div class="team__text">
-						<h2>Яна Сидор</h2>
-						<h4>Генеральний директор</h4>
-					</div>
-					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3">
-				<div class="img__box">
-					<div class="team__text">
-						<h2>Катерина Галанзовська</h2>
-						<h4>Виконавчий директор</h4>
-					</div>
-					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3">
-				<div class="img__box">
-					<div class="team__text">
-						<h2>Георгій Потапчук</h2>
-						<h4>Арт-директор</h4>
-					</div>
-					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3">
-				<div class="img__box">
-					<div class="team__text">
-						<h2>PR-директор</h2>
-						<h4>Катерина Сторожук</h4>
-					</div>
-					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script scr="js/swiper-slider.js" type="text/javascript"></script>
 </body>
 </html>
