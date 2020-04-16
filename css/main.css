@@ -79,7 +79,14 @@ section {
 /* Info */
 #info {
 	font-family: 'Neucha', cursive;
-	margin: 50px auto;
+}
+
+#info h2 {
+	margin-bottom: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
 }
 
 .info__bg {
@@ -113,9 +120,6 @@ section {
 }
 
 /* Groups */
-.groups {
-	margin: 50px 0;
-}
 .groups__card {
 	position: relative;
 	width: 100%;
@@ -229,24 +233,20 @@ section {
 }	
 
 /* Media */
-.card {
+.media .card {
 	margin: 25px 0;
 }
 
-.card:hover {
+.media .card:hover {
 	text-decoration: none;
 	box-shadow: 0 0 30px 10px rgba(66,65,66,0.6);
 	transition: 0.3s linear;
 }
 
-.card-title {
+.media .card-title {
 	font-size: 25px;
 	color: #222;
 	font-family: 'Neucha', cursive;
-}
-
-.media {
-	margin: 50px 0;
 }
 
 .media a {
@@ -256,7 +256,8 @@ section {
 /* Swiper */
 .swiper-container {
 	width: 100%;
-	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .swiper-slide {
@@ -379,7 +380,35 @@ section {
 	background: #55acee;
 }
 
+/* Volunteers */
+#accordion {
+	border-radius: 15px;
+}
 
+.volunteers h2 {
+	margin: 0 auto 15px;
+	font-family: 'Neucha', cursive;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.volunteers h4 {
+	margin: 0 auto 25px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.volunteers button {
+	color: #111;
+}
+
+.volunteers__img {
+	height: 325px;
+	background: url("../img/volunteers/patrol-7.jpg") no-repeat center;
+	background-size: cover;
+	border-radius: 15px;
+}
 
 
 
@@ -389,9 +418,36 @@ section {
 /* Media Queries*/
 @media screen and (max-width: 768px) {
 
+	section {
+		margin: 30px 0;
+	}
+
 	/*Carousel */
 	.carousel-inner {
 		height: 500px;
+	}
+	
+	/* Info */
+	#info h2 {
+		font-size: 35px;
+	}
+
+	/* fixed image */
+	#fixed-img {
+		height: 400px;
+	}
+
+	.fixed-wrap {
+		margin: 30px 0;
+	}
+
+	/* Volunteers */
+	.volunteers h2 {
+		font-size: 35px;
+	}
+
+	.volunteers h4 {
+		font-size: 20px;
 	}
 }
 
@@ -401,4 +457,35 @@ section {
 	.carousel-inner {
 		height: 400px;
 	}
+
+	/* Info */
+	#info h2 {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	
+	/* fixed image */
+	#fixed-img {
+		height: 400px;
+	}
+
+	/* Swiper */
+	.swiper__img img {
+		width: 260px;
+	}
+
+	/* Team */
+	.img__box {
+		height: 320px;
+	}
+
+	/* Volunteers */
+	.volunteers h2 {
+		font-size: 30px;
+	}
+
+	.volunteers h4 {
+		font-size: 16px;
+	}
+
 }
