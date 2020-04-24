@@ -1,579 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet">
-	<!--bootstrap-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="icon" type="img/png" href="img/icon.png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>WoodStock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="img/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>WoodStock</title>
 </head>
 <body>
-	<!-- NavBar -->
-	<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-		<div class="container-fluid">
-			<a href="#" class="navbar-brand">
-				<img src="img/logo.png" alt="logo">
-			</a>
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a href="#" class="nav-link">Головна</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Інфо</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Історія</a>
-							<a class="dropdown-item" href="#">Питання-Відповідь</a>
-							<a class="dropdown-item" href="#">Новини</a>
-							<a class="dropdown-item" href="#">Правила фестивалю</a>
-						</div>
-					</li>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Інфо</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Історія</a>
+                        <a class="dropdown-item" href="#">Питання-Відповідь</a>
+                        <a class="dropdown-item" href="#">Новини</a>
+                        <a class="dropdown-item" href="#">Правила фестивалю</a>
+                    </div>
+                </li>
 
-					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Учасники
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Main Stage</a>
-							<a class="dropdown-item" href="#">Light Stage</a>
-							<a class="dropdown-item" href="#">Night Stage</a>
-						</div>
-					</li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Учасники
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Main Stage</a>
+                        <a class="dropdown-item" href="#">Light Stage</a>
+                        <a class="dropdown-item" href="#">Night Stage</a>
+                    </div>
+                </li>
 
-					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Медіа</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Фото</a>
-							<a class="dropdown-item" href="#">Відео</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Співпраця</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Спонсори</a>
-							<a class="dropdown-item" href="#">Фудкорти</a>
-							<a class="dropdown-item" href="#">Ярмарок</a>
-							<a class="dropdown-item" href="#">Розваги</a>
-							<a class="dropdown-item" href="#">Акредитація ЗМІ</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a href="#team" class="nav-link">Команда</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Патруль миру</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Мерч</a>
-					</li>
-					<li><button class="btn btn-danger">Реєстрація</button></li>
-				</ul>
-			</div>
-		</div> <!-- /container-fluid -->
-	</nav>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Медіа</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Фото</a>
+                        <a class="dropdown-item" href="#">Відео</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#sponsors" class="nav-link">Співпраця</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Команда</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#volunteers" class="nav-link">Патруль миру</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#merch" class="nav-link">Мерч</a>
+                </li>
+                <li>
+                    <button class="btn btn-danger">Реєстрація</button>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /container-fluid -->
+</nav>
 
-	<!--Intro slider -->
-	<div id="main-caroseul" class="carousel slide" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#main-caroseul" data-slide-to="0" class="active"></li>
-			<li data-target="#main-caroseul" data-slide-to="1"></li>
-			<li data-target="#main-caroseul" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="carousel__text">
-					<div class="carousel-caption d-none d-md-block">
-						<h1>Рок фестиваль Woodstock Ukraine</h1>
-						<p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel__text">
-					<div class="carousel-caption d-none d-md-block">
-						<h1>Рок фестиваль Woodstock Ukraine</h1>
-						<p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel__text">
-					<div class="carousel-caption d-none d-md-block">
-						<h1>Рок фестиваль Woodstock Ukraine</h1>
-						<p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> <!-- /Intro slider -->
+<!--Intro slider -->
+<div id="main-caroseul" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#main-caroseul" data-slide-to="0" class="active"></li>
+        <li data-target="#main-caroseul" data-slide-to="1"></li>
+        <li data-target="#main-caroseul" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel__text">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Рок фестиваль Woodstock Ukraine</h1>
+                    <p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel__text">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Рок фестиваль Woodstock Ukraine</h1>
+                    <p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel__text">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Рок фестиваль Woodstock Ukraine</h1>
+                    <p>Фестиваль у відпустці! Слідкуйте за новинами та чекайте на повернення</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /Intro slider -->
 
-	<!-- Info -->
-	<section id="info">
-		<div class="container">
-			<h2>WOODSTOCK Ukraine - це фестиваль щасливих людей!</h2>
-			<div class="row">
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">3</div>
-						<div class="info__suptitle">Сцени</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">40</div>
-						<div class="info__suptitle">Виконавців</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">38</div>
-						<div class="info__suptitle">Годин музики</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">500</div>
-						<div class="info__suptitle">КвТ звуку</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">10</div>
-						<div class="info__suptitle">Гектарів території</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 justify-content-center">
-					<div class="info__bg">
-						<img src="img/hiclipart.com.png" alt="orange-bg">
-					</div>
-					<div class="info__content">
-						<div class="info__number">8000</div>
-						<div class="info__suptitle">Відвідувачів</div>
-					</div>
-				</div>
-			</div>
-		</div> 
-	</section> <!-- /Info -->
+<!-- Info -->
+<section id="info">
+    <div class="container">
+        <h2>WOODSTOCK Ukraine - це фестиваль щасливих людей!</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">3</div>
+                    <div class="info__suptitle">Сцени</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">40</div>
+                    <div class="info__suptitle">Виконавців</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">38</div>
+                    <div class="info__suptitle">Годин музики</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">500</div>
+                    <div class="info__suptitle">КвТ звуку</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">10</div>
+                    <div class="info__suptitle">Гектарів території</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 justify-content-center">
+                <div class="info__bg">
+                    <img src="img/hiclipart.com.png" alt="orange-bg">
+                </div>
+                <div class="info__content">
+                    <div class="info__number">8000</div>
+                    <div class="info__suptitle">Відвідувачів</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /Info -->
 
-	<!-- Groups -->
-	<section id="groups" class="groups">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-1"></div>
-						<div class="groups__name">The Nexstone</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-2"></div>
-						<div class="groups__name">Epolets</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-3"></div>
-						<div class="groups__name">Atmasfera</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-4"></div>
-						<div class="groups__name">Motanka</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-5"></div>
-						<div class="groups__name">Фіолет</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-6"></div>
-						<div class="groups__name">DETACH</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> <!--/groups-->
+<!-- Groups -->
+<section id="groups" class="groups">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-1"></div>
+                    <div class="groups__name">The Nexstone</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-2"></div>
+                    <div class="groups__name">Epolets</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-3"></div>
+                    <div class="groups__name">Atmasfera</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-4"></div>
+                    <div class="groups__name">Motanka</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-5"></div>
+                    <div class="groups__name">Фіолет</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-6"></div>
+                    <div class="groups__name">DETACH</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!--/groups-->
 
-	<!--collapse section-->
-	<div class="text-center">
+<!--collapse section-->
+<div class="text-center">
 
-		<button class="btn btn-lg btn-danger text-center" data-toggle="collapse" data-target="#groups__all">Подитивися всіх виконавців</button>
-	</div>
+    <button class="btn btn-lg btn-danger text-center" data-toggle="collapse" data-target="#groups__all">Подитивися всіх
+        виконавців
+    </button>
+</div>
 
-	<div id="groups__all" class="collapse groups__collapse">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-1"></div>
-						<div class="groups__name">Beast Riders</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-2"></div>
-						<div class="groups__name">StereoЛом</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-3"></div>
-						<div class="groups__name">Morphine Suffering</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-4"></div>
-						<div class="groups__name">Ot Vinta</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-5"></div>
-						<div class="groups__name">Тінь Сонця</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 px-0">
-					<div class="groups__card">
-						<div class="groups__img-6"></div>
-						<div class="groups__name">Hardkiss</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div id="groups__all" class="collapse groups__collapse">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-1"></div>
+                    <div class="groups__name">Beast Riders</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-2"></div>
+                    <div class="groups__name">StereoЛом</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-3"></div>
+                    <div class="groups__name">Morphine Suffering</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-4"></div>
+                    <div class="groups__name">Ot Vinta</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-5"></div>
+                    <div class="groups__name">Тінь Сонця</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+                <div class="groups__card">
+                    <div class="groups__img-6"></div>
+                    <div class="groups__name">Hardkiss</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!-- fixed img-->
-	<figure>
-		<div class="fixed-wrap">
-			<div id="fixed-img"></div>
-		</div>
-	</figure>
+<!-- fixed img-->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed-img"></div>
+    </div>
+</figure>
 
-	<!-- Media -->
-	<section id="media" class="media">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo16.jpg" alt="performer-on-stage">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2019</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo6.jpg" alt="performer-on-stage">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2018</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>	
-					</a>			
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo9.jpg" alt="visitors-to-the-festival">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2017</h5>	
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo2.jpg" alt="group-on-stage">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2016</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo18.jpg" alt="holly-festival">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2015</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<a href="https://woodstock.in.ua/foto/" target="_blank">
-						<div class="card">
-							<img class="card-img-top" src="img/media/photo15.jpg" alt="group-on-stage">
-							<div class="card-body">
-								<h5 class="card-title">WoodStock 2014</h5>			
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div> <!-- /container -->
-	</section>
+<!-- Media -->
+<section id="media" class="media">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo16.jpg" alt="performer-on-stage">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2019</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo6.jpg" alt="performer-on-stage">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2018</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo9.jpg" alt="visitors-to-the-festival">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2017</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo2.jpg" alt="group-on-stage">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2016</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo18.jpg" alt="holly-festival">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2015</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="https://woodstock.in.ua/foto/" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="img/media/photo15.jpg" alt="group-on-stage">
+                        <div class="card-body">
+                            <h5 class="card-title">WoodStock 2014</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> <!-- /container -->
+</section>
 
-	<!-- Swiper -->
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/вголос.jpg" alt="вголос">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/ukr-crisis.jpg" alt="ukr-crisis">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/m1.jpg" alt="chanel-m1">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/perfect.jpg" alt="perfect">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/plastics.jpg" alt="plastics">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/профіль-пласт.jpg" alt="профіль-пласт">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/stage-boosters.jpg" alt="stage-boosters">
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="swiper__img">
-					<img src="img/sponsors/gazeta-ua.jpg" alt="gazeta-ua">
-				</div>
-			</div>
-		</div>
-		<!-- Add Pagination -->
-		<div class="swiper-pagination"></div>
-		<!-- Add Arrows -->
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-	</div> <!--/Swiper-->
+<!-- Swiper -->
+<div id="sponsors">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/вголос.jpg" alt="вголос">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/ukr-crisis.jpg" alt="ukr-crisis">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/m1.jpg" alt="chanel-m1">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/perfect.jpg" alt="perfect">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/plastics.jpg" alt="plastics">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/профіль-пласт.jpg" alt="профіль-пласт">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/stage-boosters.jpg" alt="stage-boosters">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper__img">
+                    <img src="img/sponsors/gazeta-ua.jpg" alt="gazeta-ua">
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div><!--/Swiper-->
 
-	<!-- Team -->
-	<section id="team" class="team">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-lg-3">
-					<div class="img__box">
-						<div class="team__text">
-							<h2>Яна Сидор</h2>
-							<h4>Генеральний директор</h4>
-						</div>
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="img__box">
-						<div class="team__text">
-							<h2>Катерина Галанзовська</h2>
-							<h4>Виконавчий директор</h4>
-						</div>
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="img__box">
-						<div class="team__text">
-							<h2>Георгій Потапчук</h2>
-							<h4>Арт-директор</h4>
-						</div>
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="img__box">
-						<div class="team__text">
-							<h2>Катя Сторожук</h2>
-							<h4>PR-директор</h4>
-						</div>
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> <!-- /Team -->
+<!-- Team -->
+<section id="team" class="team">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="img__box">
+                    <div class="team__text">
+                        <h2>Яна Сидор</h2>
+                        <h4>Генеральний директор</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="img__box">
+                    <div class="team__text">
+                        <h2>Катерина Галанзовська</h2>
+                        <h4>Виконавчий директор</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="img__box">
+                    <div class="team__text">
+                        <h2>Георгій Потапчук</h2>
+                        <h4>Арт-директор</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="img__box">
+                    <div class="team__text">
+                        <h2>Катя Сторожук</h2>
+                        <h4>PR-директор</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /Team -->
 
-	<section id="volunteers" class="volunteers">
-		<div class="container">
-			<div class="row">
-				<h2>Патруль миру</h2>
-				<h4>«Патруль Миру» — це волонтери, які приїжджають з усієї країни на фестиваль Woodstock Ukraine та фінал благодійної акції «Серце до серця», щоб допомогти в організації цих заходів.</h4>
-				<div class="col-lg-6">
-					<div class="volunteers__img"></div>
-				</div>
-				<div class="col-lg-6">
-					<div id="accordion">
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Крок 1. Ти бажаєш приєднатись до Патруля Миру
-									</button>
-								</h5>
-							</div>
+<section id="volunteers" class="volunteers">
+    <div class="container">
+        <div class="row">
+            <h2>Патруль миру</h2>
+            <h4>«Патруль Миру» — це волонтери, які приїжджають з усієї країни на фестиваль Woodstock Ukraine та фінал
+                благодійної акції «Серце до серця», щоб допомогти в організації цих заходів.</h4>
+            <div class="col-lg-6">
+                <div class="volunteers__img"></div>
+            </div>
+            <div class="col-lg-6">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                    Крок 1. Ти бажаєш приєднатись до Патруля Миру
+                                </button>
+                            </h5>
+                        </div>
 
-							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-								<div class="card-body">
-									Пам'ятай, що для участі у сьомому фестивалі Woodstock Ukraine Ти повинен мати вік від 18 років! Патрулівцем може стати виключно повнолітня особа.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingTwo">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										Крок 2. Реєструйся онлайн
-									</button>
-								</h5>
-							</div>
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="card-body">
-									З повною відповідальністю і згідно з інструкцією заповни анкету. Пам'ятай, що основною умовою участі в наших навчаннях є діяльність в Патрулі Миру у якості волонтера Всеукраїнського благодійного фонду «Серце до серця» і Твоя присутність на сьомому фестивалі Woodstock Ukraine (Патруль Миру розпочинає роботу декілька днів перед початком Фестивалю і завершує її через день після його закінчення).
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingThree">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										Крок 3. Тепер діємо ми
-									</button>
-								</h5>
-							</div>
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-								<div class="card-body">
-									Коли до нас надійдуть заповнені анкети, ми відберемо та затвердимо найкращих кандидатів до Патруля Миру і напишемо листа з детальною інформацією. Якщо Ти серед числа щасливчиків – переходь до кроку 4.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingFour">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-										Крок 4. Навчання
-									</button>
-								</h5>
-							</div>
-							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-								<div class="card-body">
-									Після зголошення пройти навчання, Ти приїжджаєш до тренувальної бази. Зарезервуй собі вікенд на ці 3 дні, включно з п'ятницею. Більше необхідної інформації (про те, куди слід приїхати, що з собою брати) Ти отримаєш від нас листом на електронну адресу. Ти приїжджаєш до нас за свій рахунок, але ми забезпечуємо Тобі нічліг і харчування та звісно ж навчання.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="headingFive">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-										Крок 5. Ти частина Патруля Миру
-									</button>
-								</h5>
-							</div>
-							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-								<div class="card-body">
-									Якщо Ти пройдеш навчання і здаси іспити, тобі буде вручено наш сертифікат про те, що Ти отримав теоретичні та практичні навички з надання першої допомоги, роботи з відвідувачами масових заходів, пройшов завдання по тімбілдінгу, навчився реагувати в екстремальних умовах та навчився туристичному орієнтуванню, виховав в собі якості справжнього лідера. Також отримаєш унікальну, червону футболку Патруля Миру, чим може себе потішити тільки певна кількість осіб в Україні!
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Пам'ятай, що для участі у сьомому фестивалі Woodstock Ukraine Ти повинен мати вік від 18
+                                років! Патрулівцем може стати виключно повнолітня особа.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                    Крок 2. Реєструйся онлайн
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                З повною відповідальністю і згідно з інструкцією заповни анкету. Пам'ятай, що основною
+                                умовою участі в наших навчаннях є діяльність в Патрулі Миру у якості волонтера
+                                Всеукраїнського благодійного фонду «Серце до серця» і Твоя присутність на сьомому
+                                фестивалі Woodstock Ukraine (Патруль Миру розпочинає роботу декілька днів перед початком
+                                Фестивалю і завершує її через день після його закінчення).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Крок 3. Тепер діємо ми
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                Коли до нас надійдуть заповнені анкети, ми відберемо та затвердимо найкращих кандидатів
+                                до Патруля Миру і напишемо листа з детальною інформацією. Якщо Ти серед числа
+                                щасливчиків – переходь до кроку 4.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Крок 4. Навчання
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Після зголошення пройти навчання, Ти приїжджаєш до тренувальної бази. Зарезервуй собі
+                                вікенд на ці 3 дні, включно з п'ятницею. Більше необхідної інформації (про те, куди слід
+                                приїхати, що з собою брати) Ти отримаєш від нас листом на електронну адресу. Ти
+                                приїжджаєш до нас за свій рахунок, але ми забезпечуємо Тобі нічліг і харчування та
+                                звісно ж навчання.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Крок 5. Ти частина Патруля Миру
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                Якщо Ти пройдеш навчання і здаси іспити, тобі буде вручено наш сертифікат про те, що Ти
+                                отримав теоретичні та практичні навички з надання першої допомоги, роботи з
+                                відвідувачами масових заходів, пройшов завдання по тімбілдінгу, навчився реагувати в
+                                екстремальних умовах та навчився туристичному орієнтуванню, виховав в собі якості
+                                справжнього лідера. Також отримаєш унікальну, червону футболку Патруля Миру, чим може
+                                себе потішити тільки певна кількість осіб в Україні!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /volunteers -->
+
+<section id="merch" class="merch">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-merch">
+                    <div class="imgBox"></div>
+                    <div class="content">
+                        <h3>Кружка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        <a href="#" class="btn btn-default btn-order">Замовити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-merch">
+                    <div class="imgBox"></div>
+                    <div class="content">
+                        <h3>Футболка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        <a href="#" class="btn btn-default btn-order">Замовити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-merch">
+                    <div class="imgBox"></div>
+                    <div class="content">
+                        <h3>Футболка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        <a href="#" class="btn btn-default btn-order">Замовити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-
-
-
-
-
-
-
-
-
-
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/swiper-slider.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper-slider.js"></script>
 </body>
 </html>
