@@ -32,7 +32,10 @@ section {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
+.btn-danger:hover {
+	background: orange;
+	border: 1px solid orange;
+}
 
 /*Carousel */
 .carousel-inner {
@@ -517,6 +520,125 @@ section {
 
 .box-merch .content .btn-order:hover {
 	background: orange;
+}
+
+/* registration form */
+.registration {
+	background: #212529;
+}
+
+.registration h2 {
+	margin-bottom: 20px;
+	font-family: 'Neucha', cursive;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+.registration h5 {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.registration .col-md-6, .col-sm-12 {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	margin: 30px 0 10px;
+	transition: 1s;
+}
+
+.input-box {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	color: orange;
+}
+
+.input-box input,
+.textarea textarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 19px;
+	padding: 0 10px;
+	z-index: 1;
+}
+
+.input-box .text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 19px;
+	padding: 0 10px;
+	transition: 1s;
+}
+
+.input-box input:focus + .text,
+.input-box input:valid + .text {
+	top: -35px;
+	left: -10px;
+}
+
+.input-box .line {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: orange;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.input-box input:focus ~ .line,
+.input-box input:valid ~ .line {
+	height: 100%;
+}
+
+.textarea {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+
+.textarea textarea {
+	height: 100%;
+	resize: none;
+}
+
+.input-box textarea:focus + .text,
+.input-box textarea:valid + .text {
+	top: -35px;
+	left: -10px;
+}
+
+.input-box textarea:focus ~ .line,
+.input-box textarea:valid ~ .line {
+	height: 100%;
+}
+
+.registration input[type="submit"] {
+	border: none;
+	margin: 30px auto;
+	padding: 6px 35px;
+	cursor: pointer;
+	outline: none;
+	background: orange;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.registration input[type="submit"]:hover {
+	background: darkorange;
 }
 
 /* Media Queries*/
