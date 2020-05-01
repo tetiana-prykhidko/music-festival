@@ -6,7 +6,16 @@ body {
 }
 
 section {
-	margin: 50px 0;
+	margin: 100px 0;
+}
+
+section h2 {
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Neucha', cursive;
+	font-size: 40px;
+	font-weight: 700;
 }
 
 /* Navbar */
@@ -32,14 +41,16 @@ section {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
 .btn-danger:hover {
-	background: orange;
+	background-color: orange;
 	border: 1px solid orange;
 }
 
+
 /*Carousel */
 .carousel-inner {
-	height: 570px;
+	height: 600px;
 }
 
 .carousel-item {
@@ -80,16 +91,8 @@ section {
 }
 
 /* Info */
-#info {
+.info {
 	font-family: 'Neucha', cursive;
-}
-
-#info h2 {
-	margin-bottom: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: 700;
 }
 
 .info__bg {
@@ -167,7 +170,7 @@ section {
 
 /* groups__collapse */
 .groups__collapse {
-	margin: 50px 0;
+	margin: 100px 0;
 }
 
 .groups__collapse .groups__img-1 {
@@ -321,7 +324,7 @@ section {
 	transform: translateY(-50%);
 
 	text-align: center;
-	color: #111;
+	color: #fff;
 	width: 100%;
 	font-weight: 700;
 	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
@@ -384,12 +387,8 @@ section {
 }
 
 /* Volunteers */
-#accordion {
-	border-radius: 15px;
-}
-
 .volunteers h2 {
-	margin: 0 auto 15px;
+	margin: 0 auto 25px;
 	font-family: 'Neucha', cursive;
 	text-transform: uppercase;
 	font-size: 40px;
@@ -426,10 +425,8 @@ section {
 	text-decoration: overline;
 }
 
+
 /* Merch */
-.merch {
-	padding: 30px 0 0;
-}
 .box-merch {
 	margin: 30px auto;
 	position: relative;
@@ -524,21 +521,21 @@ section {
 
 /* registration form */
 .registration {
-	background: #212529;
+	margin: 50px 0;
 }
 
 .registration h2 {
-	margin-bottom: 20px;
+	padding-top: 20px;
 	font-family: 'Neucha', cursive;
 	font-size: 50px;
 	font-weight: 700;
-	color: #fff;
+	color: #111;
 	text-align: center;
 }
 
 .registration h5 {
 	font-size: 20px;
-	color: #fff;
+	color: #222;
 	text-align: center;
 }
 
@@ -554,7 +551,7 @@ section {
 	position: relative;
 	width: 100%;
 	height: 40px;
-	color: orange;
+	color: #222;
 }
 
 .input-box input,
@@ -577,7 +574,7 @@ section {
 	line-height: 40px;
 	font-size: 19px;
 	padding: 0 10px;
-	transition: 1s;
+	transition: 2s;
 }
 
 .input-box input:focus + .text,
@@ -590,7 +587,7 @@ section {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 2px;
+	height: 4px;
 	background: orange;
 	border-radius: 5px;
 	transition: 1s;
@@ -630,16 +627,171 @@ section {
 	padding: 6px 35px;
 	cursor: pointer;
 	outline: none;
-	background: orange;
+	background: #dc3545;
 	color: #fff;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
 	border-radius: 5px;
 }
 
 .registration input[type="submit"]:hover {
-	background: darkorange;
+	background: orange;
 }
+
+/* Modal form */
+.modal-wrapper {
+	display: none;
+	position: fixed;
+	width: 500px;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgb(34,34,34);
+	z-index: 10;
+	border-radius: 15px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.5)
+}
+
+.modal-wrapper h3 {
+	color: #fff;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.modal-input {
+	position: relative;
+}
+
+.modal-wrapper input {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	background-color: transparent;
+}
+
+.modal-wrapper input:focus ~ label,
+.modal-wrapper input:valid ~ label {
+	top: -23px;
+	left: 0;
+	color: orange;
+}
+
+.modal-wrapper label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.modal-wrapper input[type="submit"] {
+	background: transparent;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	color: #fff;
+	font-weight: 600;
+	background-color: #dc3545;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.modal-wrapper input[type="submit"]:hover {
+	background: orange;
+}
+
+.modal-registration {
+	position: relative;
+	padding: 30px;
+}
+
+.close-modal {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fff;
+	color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.open {
+	display: block;
+}
+
+
+/* Footer */
+.footer {
+	padding-top: 20px;
+	width: 100%;
+	height: 150px;
+	background-color: #222;
+	text-align: center;
+}
+
+.footer h4 {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+}
+
+.footer h5 {
+	color: #fff;
+	font-size: 23px;
+	font-weight: 700;
+	font-family: 'Neucha', cursive;
+}
+
+.footer p {
+	margin: 0;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer a {
+	padding: 8px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.footer a:hover:nth-child(1) {
+	background: #3b5999;
+}
+
+.footer a:hover:nth-child(2) {
+	background: #e4405f;
+}
+
+.footer a:hover:nth-child(3) {
+	background: #dd4b39;
+}
+
+.footer a:hover:nth-child(4) {
+	background: #55acee;
+}
+.footer a:hover:nth-child(5) {
+	background: #bd081c;
+}
+
 
 /* Media Queries*/
 @media screen and (max-width: 768px) {
@@ -681,9 +833,21 @@ section {
 		height: 400px;
 	}
 
+	/* Footer */
+	.footer {
+		height: 180px;
+	}
 }
 
 @media screen and (max-width: 576px) {
+
+	section {
+		margin: 50px 0;
+	}
+
+	section h2 {
+    margin-bottom: 15px;
+	}
 
 	/*Carousel */
 	.carousel-inner {
@@ -719,13 +883,23 @@ section {
 	.volunteers h4 {
 		font-size: 16px;
 	}
-
-	/* Merch */
-	.box-merch {
-		margin: 25px auto;
+	
+	/* Footer */
+	.footer {
+		padding-top: 10px;
+		height: 160px;
 	}
-	.box-merch {
-		height: 320px;
+
+	.footer h4 {
+		font-size: 19px;
+	}
+
+	.footer h5 {
+		font-size: 19px;
+	}
+
+	.footer a {
+		font-size: 25px;
 	}
 
 }
